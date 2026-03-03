@@ -39,6 +39,7 @@ header:
     - "**/*.cu"
     - "**/*.cuh"
     - ".gitignore"
+    - ".git-blame-ignore-revs"
     - "LICENSE"
     - "NOTICE"
     - "CODEOWNERS"
@@ -57,6 +58,7 @@ header:
     - "**/*.lock"
     - "website/layouts/**"
     - ".dockerignore"
+    - ".gitattributes"
 
   comment: on-failure
 
