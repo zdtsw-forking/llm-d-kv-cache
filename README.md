@@ -1,3 +1,9 @@
+> **IMPORTANT**
+>
+> [llm-d/llm-d-kv-cache](https://github.com/llm-d/llm-d-kv-cache) (`main`) -> [opendatahub-io/llm-d-kv-cache](https://github.com/opendatahub-io/llm-d-kv-cache) (`main_2`) -> [red-hat-data-services/llm-d-kv-cache](https://github.com/red-hat-data-services/llm-d-kv-cache) (`main`)
+>
+> Changes should be contributed to the upstream [llm-d/llm-d-kv-cache](https://github.com/llm-d/llm-d-kv-cache) repository. They will flow downstream through the sync chain.
+
 [![Go Report Card](https://goreportcard.com/badge/github.com/llm-d/llm-d-kv-cache)](https://goreportcard.com/report/github.com/llm-d/llm-d-kv-cache)
 [![Go Reference](https://pkg.go.dev/badge/github.com/llm-d/llm-d-kv-cache.svg)](https://pkg.go.dev/github.com/llm-d/llm-d-kv-cache)
 [![License](https://img.shields.io/github/license/llm-d/llm-d-kv-cache)](LICENSE)
