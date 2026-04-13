@@ -6,9 +6,8 @@ requires-python = ">=3.12,<3.13"
 dependencies = [
     # vLLM 0.18.0 CPU wheels — Linux-only, arch-conditional via PEP 508 markers
     # NOTE - we have to specify the URL here to ensure this hits the CPU index first
-    # "vllm @ https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl ; platform_system == 'Linux' and platform_machine == 'x86_64'",
-    # "vllm @ https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl ; platform_system == 'Linux' and platform_machine == 'aarch64'",
-    "vllm==0.18.0+rhaiv.0 ; platform_system == 'Linux'",
+    "vllm @ https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl ; platform_system == 'Linux' and platform_machine == 'x86_64'",
+    "vllm @ https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl ; platform_system == 'Linux' and platform_machine == 'aarch64'",
     "pydantic>=2.12.0",
     "shortuuid>=1.0.13",
     "transformers>=4.57.0,<5",
@@ -35,10 +34,6 @@ test = [
     "pytest-timeout>=2.1.0",
     "requests>=2.25.0",
 ]
-
-# UPGRADE RHAI VERSION HERE
-[tool.uv]
-index-url = "https://packages.redhat.com/api/pypi/public-rhai/rhoai/3.4/cpu-ubi9/simple/"
 
 [tool.ruff]
 exclude = ["tokenizerpb/*_pb2.py", "tokenizerpb/*_pb2_grpc.py"]

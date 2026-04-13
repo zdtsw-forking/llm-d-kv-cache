@@ -724,14 +724,6 @@ wheels = [
 ]
 
 [[package]]
-name = "intel-cmplr-lib-ur"
-version = "2024.2.1"
-source = { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/intel_cmplr_lib_ur-2024.2.1-py2.py3-none-manylinux1_x86_64.whl" }
-wheels = [
-    { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/intel_cmplr_lib_ur-2024.2.1-py2.py3-none-manylinux1_x86_64.whl", hash = "sha256:8b78d58ab501d6e5a582967be80fdbf7b03b33279135a303da36dbf11f481ed7" },
-]
-
-[[package]]
 name = "intel-openmp"
 version = "2024.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -2212,7 +2204,6 @@ dependencies = [
     { name = "grpcio-reflection" },
     { name = "grpcio-tools" },
     { name = "huggingface-hub" },
-    { name = "intel-cmplr-lib-ur", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
     { name = "jinja2" },
     { name = "modelscope" },
     { name = "protobuf" },
@@ -2221,8 +2212,8 @@ dependencies = [
     { name = "shortuuid" },
     { name = "tiktoken" },
     { name = "transformers" },
-    { name = "vllm", version = "0.18.0+rhaiv.0", source = { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl" }, marker = "platform_machine == 'aarch64' and sys_platform == 'linux'" },
-    { name = "vllm", version = "0.18.0+rhaiv.0", source = { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl" }, marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
+    { name = "vllm", version = "0.18.0+rhaiv.0", source = { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl" }, marker = "platform_machine == 'aarch64' and sys_platform == 'linux'" },
+    { name = "vllm", version = "0.18.0+rhaiv.0", source = { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl" }, marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
 ]
 
 [package.optional-dependencies]
@@ -2240,7 +2231,6 @@ requires-dist = [
     { name = "grpcio-reflection", specifier = ">=1.78.0" },
     { name = "grpcio-tools", specifier = ">=1.78.0" },
     { name = "huggingface-hub", specifier = ">=0.36.0" },
-    { name = "intel-cmplr-lib-ur", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'", url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/intel_cmplr_lib_ur-2024.2.1-py2.py3-none-manylinux1_x86_64.whl" },
     { name = "jinja2", specifier = ">=3.1.6" },
     { name = "modelscope", specifier = ">=1.35.0" },
     { name = "protobuf", specifier = ">=6.31.1" },
@@ -2253,8 +2243,8 @@ requires-dist = [
     { name = "shortuuid", specifier = ">=1.0.13" },
     { name = "tiktoken", specifier = ">=0.12.0" },
     { name = "transformers", specifier = ">=4.57.0,<5" },
-    { name = "vllm", marker = "platform_machine == 'aarch64' and sys_platform == 'linux'", url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl" },
-    { name = "vllm", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'", url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl" },
+    { name = "vllm", marker = "platform_machine == 'aarch64' and sys_platform == 'linux'", url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl" },
+    { name = "vllm", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'", url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl" },
 ]
 provides-extras = ["test"]
 
@@ -2305,7 +2295,7 @@ wheels = [
 [[package]]
 name = "vllm"
 version = "0.18.0+rhaiv.0"
-source = { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl" }
+source = { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl" }
 resolution-markers = [
     "platform_machine == 'aarch64' and sys_platform == 'linux'",
 ]
@@ -2374,7 +2364,7 @@ dependencies = [
     { name = "xgrammar", marker = "platform_machine == 'aarch64' and sys_platform == 'linux'" },
 ]
 wheels = [
-    { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl", hash = "sha256:93e56609df4fc1de9f7857923de0f3a0de0ab7d0dba90b7276255a7356a99039" },
+    { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_aarch64.whl", hash = "sha256:93e56609df4fc1de9f7857923de0f3a0de0ab7d0dba90b7276255a7356a99039" },
 ]
 
 [package.metadata]
@@ -2476,7 +2466,7 @@ provides-extras = ["zen", "bench", "tensorizer", "fastsafetensors", "instanttens
 [[package]]
 name = "vllm"
 version = "0.18.0+rhaiv.0"
-source = { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl" }
+source = { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl" }
 resolution-markers = [
     "platform_machine == 'x86_64' and sys_platform == 'linux'",
 ]
@@ -2546,7 +2536,7 @@ dependencies = [
     { name = "xgrammar", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
 ]
 wheels = [
-    { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9-test/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl", hash = "sha256:cec0094e659d7de82af951c5b62d4c2e2b0d0dd0b04ba519c7b2db1c4dc746cf" },
+    { url = "https://packages.redhat.com/api/pulp-content/public-rhai/rhoai/3.4/cpu-ubi9/vllm-0.18.0+rhaiv.0-6-cp312-cp312-linux_x86_64.whl", hash = "sha256:cec0094e659d7de82af951c5b62d4c2e2b0d0dd0b04ba519c7b2db1c4dc746cf" },
 ]
 
 [package.metadata]
