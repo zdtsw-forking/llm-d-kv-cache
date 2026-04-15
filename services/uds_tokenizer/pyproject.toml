@@ -35,6 +35,10 @@ test = [
     "requests>=2.25.0",
 ]
 
+[[tool.uv.index]]
+name = "aipcc"
+url = "https://packages.redhat.com/api/pypi/public-rhai/rhoai/3.4/cpu-ubi9/simple/"
+
 [tool.ruff]
 exclude = ["tokenizerpb/*_pb2.py", "tokenizerpb/*_pb2_grpc.py"]
 
