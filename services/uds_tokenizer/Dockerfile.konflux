@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Build stage
-FROM --platform=$TARGETPLATFORM registry.access.redhat.com/ubi9/python-312:9.7 AS builder
+FROM --platform=$TARGETPLATFORM quay.io/aipcc/base-images/cpu:3.4 AS builder
 
 # Set build arguments
 ARG TARGETPLATFORM
